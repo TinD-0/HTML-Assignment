@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            ICBMs
+        </title>
+        <script src="icbm.js"></script>
+        <style>
+            #body{
+                background-color: lightgrey;
+                color: rgb(64, 64, 64);
+                font-family: 'Times New Roman', Times, serif;
+                width: 400px;
+                font-size: normal;
+            }
+
+            #main-title{
+                font-weight: bold;
+                font-size: 26pt;
+            }
+
+            #nuke-btn{
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            #nuke-btn-img{
+                filter: contrast(1.5);
+                width: 100px;
+            }
+
+            #nuclear-caption{
+                color: green;
+            }
+
+            #missile{
+                top: 200px;
+                display: none;
+                position: absolute;
+                z-index: 1000;
+                width:max-content;
+            }
+
+            a:active{
+                color: red;
+                background-color: aliceblue;
+                font-size: 20pt;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <p style="text-align: right;">
+            January 5, 1984
+        </p>
+        <h3>
+            Foreign ICBMs
+        </h3>
+        <p>
+            &Tab;
+            An intercontinental ballistic missile (ICBM) is a ballistic missile with a range greater 
+            than 5,500 kilometres (3,400 mi), primarily designed for nuclear weapons delivery 
+            (delivering one or more thermonuclear warheads). Conventional, chemical, and biological 
+            weapons can also be delivered with varying effectiveness, but have never been deployed on 
+            ICBMs. Most modern designs support multiple independently targetable reentry vehicle 
+            (MIRVs), allowing a single missile to carry several warheads, each of which can strike a 
+            different target. The United States, Russia, China, France, India, the United Kingdom, 
+            Israel, and North Korea are the only countries known to have operational ICBMs. Pakistan 
+            is the only nuclear-armed state that does not possess ICBMs.
+        </p>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Intercontinental_ballistic_missile">
+            Continued Here
+        </a>
+        <p>
+            PS: DO NOT PRESS &downarrow;
+        </p>
+        <button id="nuke-btn" type="button" onclick="OnNukeButton();">
+            <div>
+                <img id="nuke-btn-img" src="nuke-btn.png">
+                <br>
+                <caption id="nuclear-caption">
+                    <p>DO NOT PRESS</p>
+                </caption>
+            </div>
+        </button>
+        <img id="missile" src="https://i.gifer.com/7MyF.gif">
+    </body>
+</html>
