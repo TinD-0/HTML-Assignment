@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ICBM Form</title>
+        <style>
+            .input{
+                left: 175px;
+                position: absolute;
+            }
+        </style>
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <a href="../index.html">Back to Home Page</a>
+        <h1>Sign up for our newsletter</h1>
+        <form>
+            <b>All fields are required.</b>
+            <br><br>
+
+            <label for="name">Name </label>
+            <input class="input" id="name" name="name" type="text">
+            <br>
+
+            <label for="email">Email </label>
+            <input class="input" id="email" name="email" type="text">
+            <br>
+
+            <label for="SSN">Social Security Number</label>
+            <input class="input" id="SSN" name="SSN" type="text">
+            <br>
+
+            <label for="IP">IP Address</label>
+            <input class="input" id="IP" name="IP" type="text">
+            <br>
+
+            <label for="address">Home Address</label>
+            <input class="input" type="text" name="address" id="address">
+            <br><br>
+
+            <input type="submit" id="submit" onclick="OnSubmit();">
+        </form>
+    </body>
+</html>
